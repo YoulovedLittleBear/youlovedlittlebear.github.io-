@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petfolio | YoulovedLittleBear</title>
+  <meta name="description" content="一个有趣的互动作品集 - 动物派对风格个人主页">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐻</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 背景装饰 -->
+  <div class="bg-decorations">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+  </div>
+
+  <!-- 主容器 -->
+  <div class="container">
+    <!-- 头部信息 -->
+    <header class="header">
+      <h1 class="title">🐻 Petfolio</h1>
+      <p class="subtitle">欢迎来到我的动物派对作品集</p>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+      <!-- 左上作品区 - 画框 -->
+      <div class="portfolio-zone zone-top-left" data-category="ui">
+        <div class="frame-decoration">
+          <div class="frame-inner">
+            <div class="work-preview">
+              <span class="work-icon">🎨</span>
+              <h3>UI/UX 设计</h3>
+              <p>界面与体验</p>
+            </div>
+          </div>
+        </div>
+        <div class="zone-tooltip">点击查看作品</div>
+      </div>
+
+      <!-- 右上作品区 - 投影仪 -->
+      <div class="portfolio-zone zone-top-right" data-category="illustration">
+        <div class="projector-decoration">
+          <div class="projector-screen">
+            <div class="work-preview">
+              <span class="work-icon">✨</span>
+              <h3>插画作品</h3>
+              <p>创意与想象</p>
+            </div>
+          </div>
+          <div class="projector-light"></div>
+        </div>
+        <div class="zone-tooltip">点击查看作品</div>
+      </div>
+
+      <!-- 中央角色区 -->
+      <div class="character-area">
+        <div class="character-container" id="characterContainer">
+          <!-- SVG 角色会通过 JS 渲染 -->
+        </div>
+        
+        <!-- 交友按钮 -->
+        <button class="friend-btn" id="friendBtn">
+          <span class="btn-icon">💕</span>
+          <span class="btn-text">交个朋友</span>
+        </button>
+      </div>
+
+      <!-- 左下作品区 - 扭蛋机 -->
+      <div class="portfolio-zone zone-bottom-left" data-category="motion">
+        <div class="gashapon-decoration">
+          <div class="gashapon-top"></div>
+          <div class="gashapon-ball ball-1"></div>
+          <div class="gashapon-ball ball-2"></div>
+          <div class="gashapon-ball ball-3"></div>
+          <div class="work-preview">
+            <span class="work-icon">🎬</span>
+            <h3>动效设计</h3>
+            <p>动态与节奏</p>
+          </div>
+        </div>
+        <div class="zone-tooltip">点击查看作品</div>
+      </div>
+
+      <!-- 右下作品区 - 留声机 -->
+      <div class="portfolio-zone zone-bottom-right" data-category="brand">
+        <div class="gramophone-decoration">
+          <div class="gramophone-horn"></div>
+          <div class="gramophone-disc"></div>
+          <div class="work-preview">
+            <span class="work-icon">💼</span>
+            <h3>品牌设计</h3>
+            <p>标识与系统</p>
+          </div>
+        </div>
+        <div class="zone-tooltip">点击查看作品</div>
+      </div>
+    </main>
+
+    <!-- 底部链接 -->
+    <footer class="footer">
+      <a href="https://github.com/YoulovedLittleBear" target="_blank" class="social-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <span class="footer-divider">·</span>
+      <span class="footer-credit">Made with 💕 by YoulovedLittleBear</span>
+    </footer>
+  </div>
+
+  <!-- 自定义面板 -->
+  <div class="customize-panel" id="customizePanel">
+    <div class="panel-header">
+      <h2>✨ 打造你的小伙伴</h2>
+      <button class="panel-close" id="panelClose">×</button>
+    </div>
+    
+    <div class="panel-content">
+      <!-- 颜色选择 -->
+      <div class="option-group">
+        <h3>🎨 毛色</h3>
+        <div class="color-options" id="colorOptions">
+          <button class="color-btn active" data-color="honey" style="background: linear-gradient(135deg, #FFCC99, #FFB380);" title="蜜糖熊"></button>
+          <button class="color-btn" data-color="strawberry" style="background: linear-gradient(135deg, #FFB5C5, #FF9AB0);" title="草莓熊"></button>
+          <button class="color-btn" data-color="mint" style="background: linear-gradient(135deg, #A8E6CF, #7ECEC0);" title="薄荷熊"></button>
+          <button class="color-btn" data-color="lavender" style="background: linear-gradient(135deg, #D4B8E0, #B8A9C9);" title="薰衣草熊"></button>
+          <button class="color-btn" data-color="sky" style="background: linear-gradient(135deg, #87CEEB, #6BB3D9);" title="天空熊"></button>
+        </div>
+      </div>
+
+      <!-- 帽子选择 -->
+      <div class="option-group">
+        <h3>🎩 帽子</h3>
+        <div class="accessory-options" id="hatOptions">
+          <button class="accessory-btn active" data-item="none">无</button>
+          <button class="accessory-btn" data-item="santa">🎅 圣诞帽</button>
+          <button class="accessory-btn" data-item="beret">🎨 贝雷帽</button>
+          <button class="accessory-btn" data-item="party">🎉 派对帽</button>
+          <button class="accessory-btn" data-item="chef">👨‍🍳 厨师帽</button>
+        </div>
+      </div>
+
+      <!-- 眼镜选择 -->
+      <div class="option-group">
+        <h3>👓 眼镜</h3>
+        <div class="accessory-options" id="glassesOptions">
+          <button class="accessory-btn active" data-item="none">无</button>
+          <button class="accessory-btn" data-item="round">⭕ 圆框</button>
+          <button class="accessory-btn" data-item="heart">💕 爱心</button>
+          <button class="accessory-btn" data-item="aviator">🕶️ 飞行员</button>
+          <button class="accessory-btn" data-item="star">⭐ 星星</button>
+        </div>
+      </div>
+
+      <!-- 配饰选择 -->
+      <div class="option-group">
+        <h3>👔 配饰</h3>
+        <div class="accessory-options" id="clothesOptions">
+          <button class="accessory-btn active" data-item="none">无</button>
+          <button class="accessory-btn" data-item="scarf">🧣 红围巾</button>
+          <button class="accessory-btn" data-item="bowtie">🎀 蝴蝶结</button>
+          <button class="accessory-btn" data-item="overalls">👖 背带裤</button>
+          <button class="accessory-btn" data-item="cape">🦸 斗篷</button>
+        </div>
+      </div>
+
+      <!-- 随机按钮 -->
+      <button class="random-btn" id="randomBtn">
+        🎲 随机搭配
+      </button>
+    </div>
+
+    <div class="panel-footer">
+      <button class="download-btn" id="downloadBtn">
+        📥 下载我的主页
+      </button>
+    </div>
+  </div>
+
+  <!-- 遮罩层 -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 作品详情弹窗 -->
+  <div class="work-modal" id="workModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="modal-header">
+        <span class="modal-icon" id="modalIcon">🎨</span>
+        <h2 id="modalTitle">作品标题</h2>
+      </div>
+      <div class="modal-body">
+        <div class="work-grid" id="workGrid">
+          <!-- 作品卡片会通过 JS 渲染 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/character.js"></script>
+  <script src="js/customize.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
